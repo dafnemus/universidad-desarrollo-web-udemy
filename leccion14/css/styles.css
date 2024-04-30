@@ -3,7 +3,6 @@ h1 {
 }
 
 ul {
-  list-style-type: none;
   background-color: #457b9d;
   overflow: hidden;
   margin: 0;
@@ -12,16 +11,33 @@ ul {
 
 li {
   float: left;
+  padding: 15px;
+  color: white;
+  display: block;
 }
 
 li a {
   display: block;
-  color: white;
   text-align: center;
-  padding: 15px;
   text-decoration: none;
 }
 
 li a:hover {
   background-color: #1d3557;
+}
+
+ol {
+  background-color: #1d3557;
+  overflow: hidden;
+  list-style: none;
+  counter-reset: contador;
+}
+
+ol li {
+  counter-increment: contador;
+}
+
+ol li::before {
+  content: "Curso " counter(contador) ') ';
+  color: orange;
 }
