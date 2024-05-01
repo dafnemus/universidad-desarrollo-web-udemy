@@ -12,7 +12,7 @@ p {
   color: #457b9d;
 }
 
-div {
+.tarjeta {
   border: 10px solid #560bad;
   background-color: #f1faee;
   text-align: center;
