@@ -7,16 +7,16 @@
 </head>
 <body>
   <h1>Formularios en HTML</h1>
-  <form action="" method="POST">
-		<label for="name">Nombre</label>
+  <form method="POST">
+		<label for="name">Nombre:</label>
 		<input 
-		  type="text" 
-      id="name" 
+		  type="text"
+      id="name"
       name="name" 
       placeholder="Escribe tu nombre" 
 			required
     />
-    <label for="lastname">Apellido</label>
+    <label for="lastname">Apellido:</label>
     <input 
       type="text" 
       id="lastname" 
@@ -24,6 +24,8 @@
       placeholder="Escribe tu apellido" 
 			required
     />
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required />
 		<label for="password">Password</label>
     <input 
       type="password" 
@@ -31,6 +33,8 @@
       name="password" 
 			required
     />
+    <label for="age">Edad:</label>
+    <input type="number" name="age" id="age" />
     <input type="submit" value="Enviar" />
   </form>
 </body>
