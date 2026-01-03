@@ -8,53 +8,56 @@
 <body>
   <h1>Formularios en HTML</h1>
   <form method="GET">
-		<label for="name">Nombre:</label><br>
-		<input 
-		  type="text"
-      id="name"
-      name="name" 
-      placeholder="Escribe tu nombre" 
-			required
-    /> <br>
-    <label for="lastname">Apellido:</label><br>
-    <input 
-      type="text" 
-      id="lastname" 
-      name="lastname" 
-      placeholder="Escribe tu apellido" 
-			required
-    /><br>
-    <label for="email">Email:</label><br>
-    <input type="email" name="email" id="email" required /><br>
-		<label for="password">Password</label><br>
-    <input 
-      type="password" 
-      id="password" 
-      name="password" 
-			required
-    /> <br>
-    <label for="age">Edad:</label><br>
-    <input type="number" name="age" id="age" /><br>
-    <label for="">Género:</label><br>
-    <input type="radio" name="gender" id="male" value="male" />
-    <label for="male">Masculino</label><br>
-    <input type="radio" name="gender" id="female" value="female" />
-    <label for="female">Femenino</label><br>
-    <label for="">Genero Musica Favorita</label><br>
-    <input type="checkbox" name="music" id="clasic" value="clasic" />
-    <label for="clasic">Clasica</label><br>
-    <input type="checkbox" name="music" id="rock" value="rock" />
-    <label for="rock">Rock</label><br>
-    <label for="cars">Marca de auto favorita</label>
-    <select name="cars" id="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="opel">Opel</option>
-      <option value="audi" selected>Audi</option>
-    </select><br>
-    <label for="message">Mensaje:</label><br>
-    <textarea name="message" id="message" cols="30" rows="2"></textarea><br>
-    <input type="submit" value="Enviar" />
+		<fieldset>
+      <legend>Datos Personales:</legend>
+      <label for="name">Nombre:</label><br>
+      <input 
+        type="text"
+        id="name"
+        name="name" 
+        placeholder="Escribe tu nombre" 
+        required
+      /> <br>
+      <label for="lastname">Apellido:</label><br>
+      <input 
+        type="text" 
+        id="lastname" 
+        name="lastname" 
+        placeholder="Escribe tu apellido" 
+        required
+      /><br>
+      <label for="email">Email:</label><br>
+      <input type="email" name="email" id="email" required /><br>
+      <label for="password">Password</label><br>
+      <input 
+        type="password" 
+        id="password" 
+        name="password" 
+        required
+      /> <br>
+      <label for="age">Edad:</label><br>
+      <input type="number" name="age" id="age" /><br>
+      <label for="">Género:</label><br>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Masculino</label><br>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Femenino</label><br>
+      <label for="">Genero Musica Favorita</label><br>
+      <input type="checkbox" name="music" id="clasic" value="clasic" />
+      <label for="clasic">Clasica</label><br>
+      <input type="checkbox" name="music" id="rock" value="rock" />
+      <label for="rock">Rock</label><br>
+      <label for="cars">Marca de auto favorita</label>
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi" selected>Audi</option>
+      </select><br>
+      <label for="message">Mensaje:</label><br>
+      <textarea name="message" id="message" cols="30" rows="2"></textarea><br>
+      <input type="submit" value="Enviar" />
+    </fieldset>
   </form>
 </body>
 </html>
